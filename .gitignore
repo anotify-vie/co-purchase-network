@@ -1,0 +1,28 @@
+# Môi trường Python và cấu hình cục bộ
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Cache và file sinh tự động
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Dữ liệu: chỉ quản lý placeholder để giữ cấu trúc thư mục
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+
+# File hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Không bỏ qua config.py, requirements.txt, notebooks, reports hay outputs.
+# Các kết quả nhỏ trong outputs/ có thể được quản lý bằng Git.
