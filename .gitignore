@@ -14,6 +14,9 @@ __pycache__/
 .ruff_cache/
 .cache/
 
+# Các bản sao lưu
+/backups/
+
 # Dữ liệu: chỉ quản lý placeholder để giữ cấu trúc thư mục
 data/raw/**
 !data/raw/.gitkeep

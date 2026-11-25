@@ -21,6 +21,6 @@ SLIDES_DIR = REPORTS_DIR / "slides"
 
 # Giá trị khởi đầu, chưa phải các lựa chọn đã được xác thực bằng dữ liệu.
 TOP_N_PRODUCTS = 100
-MIN_EDGE_WEIGHT = 3
+MIN_EDGE_WEIGHT = 125
 MIN_RULE_PAIR_COUNT = 5
 RANDOM_STATE = 42

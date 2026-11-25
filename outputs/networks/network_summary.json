@@ -33,7 +33,7 @@
   },
   "configuration": {
     "TOP_N_PRODUCTS": 100,
-    "MIN_EDGE_WEIGHT": 3,
+    "MIN_EDGE_WEIGHT": 125,
     "RANDOM_STATE": 42
   },
   "versions": {
@@ -186,36 +186,36 @@
   },
   "final_graph_metrics": {
     "nodes": 100,
-    "edges": 4950,
-    "density": 1.0,
+    "edges": 2074,
+    "density": 0.41898989898989897,
     "connected_components": 1,
     "largest_component_size": 100,
     "isolated_nodes": 0,
-    "total_edge_weight": 650269,
+    "total_edge_weight": 405546,
     "degree_distribution": {
       "count": 100.0,
-      "mean": 99.0,
-      "std": 0.0,
-      "min": 99.0,
-      "25%": 99.0,
-      "median": 99.0,
-      "75%": 99.0,
-      "90%": 99.0,
-      "95%": 99.0,
-      "99%": 99.0,
-      "max": 99.0
+      "mean": 41.48,
+      "std": 23.68073845422422,
+      "min": 1.0,
+      "25%": 22.0,
+      "median": 41.0,
+      "75%": 58.0,
+      "90%": 71.40000000000003,
+      "95%": 80.29999999999998,
+      "99%": 94.04000000000002,
+      "max": 98.0
     },
     "edge_weight_distribution": {
-      "count": 4950.0,
-      "mean": 131.36747474747474,
-      "std": 79.84688641672518,
-      "min": 19.0,
-      "25%": 81.0,
-      "median": 113.0,
-      "75%": 156.0,
-      "90%": 217.0,
-      "95%": 274.5500000000002,
-      "99%": 469.02000000000044,
+      "count": 2074.0,
+      "mean": 195.5380906460945,
+      "std": 85.79004732141706,
+      "min": 125.0,
+      "25%": 142.0,
+      "median": 167.0,
+      "75%": 213.75,
+      "90%": 295.0,
+      "95%": 377.0499999999997,
+      "99%": 539.54,
       "max": 825.0
     }
   },
@@ -259,8 +259,8 @@
         "invoices": 19773,
         "pair_count_sum": 650269,
         "nodes": 100,
-        "edges": 4950,
-        "density": 1.0,
+        "edges": 2074,
+        "density": 0.41898989898989897,
         "connected_components": 1,
         "largest_component_size": 100,
         "isolated_nodes": 0
@@ -269,11 +269,11 @@
         "invoices": 19137,
         "pair_count_sum": 328770,
         "nodes": 100,
-        "edges": 4950,
-        "density": 1.0,
-        "connected_components": 1,
-        "largest_component_size": 100,
-        "isolated_nodes": 0
+        "edges": 497,
+        "density": 0.1004040404040404,
+        "connected_components": 11,
+        "largest_component_size": 87,
+        "isolated_nodes": 7
       },
       "threshold_comparisons": [
         {
@@ -364,17 +364,6 @@
     },
     "edge_thresholds": [
       {
-        "threshold": 3,
-        "nodes": 100,
-        "edges": 4950,
-        "density": 1.0,
-        "connected_components": 1,
-        "largest_component_size": 100,
-        "isolated_nodes": 0,
-        "retained_edge_weight": 650269,
-        "total_edge_weight_retained_pct": 100.0
-      },
-      {
         "threshold": 50,
         "nodes": 100,
         "edges": 4730,
@@ -395,6 +384,17 @@
         "isolated_nodes": 0,
         "retained_edge_weight": 506431,
         "total_edge_weight_retained_pct": 77.88023110435834
+      },
+      {
+        "threshold": 125,
+        "nodes": 100,
+        "edges": 2074,
+        "density": 0.41898989898989897,
+        "connected_components": 1,
+        "largest_component_size": 100,
+        "isolated_nodes": 0,
+        "retained_edge_weight": 405546,
+        "total_edge_weight_retained_pct": 62.36588242711862
       },
       {
         "threshold": 150,
@@ -422,19 +422,6 @@
     "product_scope": {
       "status": "completed",
       "comparisons": [
-        {
-          "top_n": 50,
-          "threshold": 3,
-          "invoice_coverage_pct": 71.33970565923228,
-          "product_occurrence_coverage_pct": 11.35894833502489,
-          "nodes": 50,
-          "edges": 1225,
-          "density": 1.0,
-          "connected_components": 1,
-          "largest_component_size": 50,
-          "isolated_nodes": 0,
-          "total_edge_weight_retained_pct": 100.0
-        },
         {
           "top_n": 50,
           "threshold": 100,
@@ -515,19 +502,6 @@
         },
         {
           "top_n": 75,
-          "threshold": 3,
-          "invoice_coverage_pct": 77.37824305871644,
-          "product_occurrence_coverage_pct": 15.395292639311778,
-          "nodes": 75,
-          "edges": 2775,
-          "density": 1.0,
-          "connected_components": 1,
-          "largest_component_size": 75,
-          "isolated_nodes": 0,
-          "total_edge_weight_retained_pct": 100.0
-        },
-        {
-          "top_n": 75,
           "threshold": 100,
           "invoice_coverage_pct": 77.37824305871644,
           "product_occurrence_coverage_pct": 15.395292639311778,
@@ -603,19 +577,6 @@
           "largest_component_size": 72,
           "isolated_nodes": 1,
           "total_edge_weight_retained_pct": 35.10623782593558
-        },
-        {
-          "top_n": 100,
-          "threshold": 3,
-          "invoice_coverage_pct": 80.62509482627826,
-          "product_occurrence_coverage_pct": 18.85979411338263,
-          "nodes": 100,
-          "edges": 4950,
-          "density": 1.0,
-          "connected_components": 1,
-          "largest_component_size": 100,
-          "isolated_nodes": 0,
-          "total_edge_weight_retained_pct": 100.0
         },
         {
           "top_n": 100,
@@ -765,8 +726,7 @@
   ],
   "warnings": [
     "TOP_N_PRODUCTS and MIN_EDGE_WEIGHT are initial research settings, not validated optima.",
-    "Large invoices are retained in baseline; they contribute 49.44% of selected-product cooccurrence events.",
-    "The final graph is complete (density = 1): no positive pair is removed at the current threshold, and all nodes have identical degree. See threshold sensitivity before structural interpretation."
+    "Large invoices are retained in baseline; they contribute 49.44% of selected-product cooccurrence events."
   ],
   "output_files": [
     "outputs/tables/selected_products.csv",
