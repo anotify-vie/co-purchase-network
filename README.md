@@ -126,10 +126,5 @@ Tất cả figure được notebook 05 dựng từ saved outputs, không đọc 
 | `rq3_association_heatmap.png` | `cross_selling_candidates.csv` cho pair support; `cross_selling_shortlist.csv` và `node_metrics.csv` để chọn/nhóm sản phẩm |
 | `rq3_support_vs_lift.png` | `cross_selling_candidates.csv` + `cross_selling_shortlist.csv` + `cross_selling_business_review.csv` |
 
-PNG được lưu ở 300 DPI. Không xuất PDF. Giữ graph, các bảng phân tích và Business Review đồng bộ trước khi tái tạo figure.
+PNG được lưu ở 300 DPI. Giữ graph, các bảng phân tích và Business Review đồng bộ trước khi tái tạo figure.
 
-## Phạm vi kiểm chứng của review
-
-Đã kiểm tra định dạng và compile toàn bộ 5 notebook; chạy các cell xử lý trong namespace mới cho từng notebook ở môi trường hiện tại, bỏ qua ghi file; đối chiếu dữ liệu và các bảng tính lại với outputs đang lưu. Cả 7 PNG được dựng lại trong bộ nhớ và khớp từng byte với file hiện có. Đây chưa phải thử nghiệm cài đặt trên môi trường sạch hoặc chạy toàn bộ pipeline qua các Jupyter kernel mới.
-
-Sau review, đã bổ sung dependencies vào `requirements.txt` và validation đầu vào của notebook 04: đối chiếu SHA256 của `invoice_items.parquet`, `pair_counts.csv` với metadata Phase 2, đồng thời kiểm tra Top N và tập StockCode. Notebook dừng trước khi tính association nếu không khớp và yêu cầu chạy lại Phase 2. Các spot checks trực tiếp và công thức association được giữ nguyên.
